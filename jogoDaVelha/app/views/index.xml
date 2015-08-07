@@ -1,0 +1,12 @@
+<Alloy>
+	<Window>
+		<Label class='h3 bold title'>Informe os Jogadores</Label>
+		<View class='container cont-red'>
+			<TextField id='redPlayer'></TextField>
+		</View>
+		<View class='container cont-blue'>
+			<TextField id='bluePlayer'></TextField>
+		</View>
+		<Button onClick='startGame' id='btnStart'>Iniciar Jogo</Button>
+	</Window>
+</Alloy>

@@ -1,0 +1,25 @@
+<Alloy>
+	<Window>
+		<View class='players'>
+			<Label id='redPlayer' class='h5'></Label>
+			<Label id='bluePlayer' class='h5'></Label>
+		</View>
+		<View class='container'>
+			<View onClick="doClick" class='square square-top square-left' id="tl"></View>
+			<View onClick="doClick" class='square square-top' id="tc"></View>
+			<View onClick="doClick" class='square square-top square-right' id="tr"></View>
+
+			<View onClick="doClick" class='square square-left' id="cl"></View>
+			<View onClick="doClick" class='square' id="cc"></View>
+			<View onClick="doClick" class='square square-right' id="cr"></View>
+
+			<View onClick="doClick" class='square square-bottom square-left' id="bl"></View>
+			<View onClick="doClick" class='square square-bottom' id="bc"></View>
+			<View onClick="doClick" class='square square-bottom square-right' id="br"></View>
+		</View>
+		<View class='navigation'>
+			<Label onClick="newGame" class='icon-btn' id='btnNewGame'>Novo Jogo</Label>
+			<Label onClick="reload" class='icon-btn' id='btnReload' >Reiniciar</Label>
+		</View>
+	</Window>
+</Alloy>

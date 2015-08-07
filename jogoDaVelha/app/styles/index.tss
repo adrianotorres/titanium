@@ -1,0 +1,38 @@
+"Window": {
+	backgroundColor: 'white'
+},
+".cont-red": {
+	backgroundColor: 'rgba(210,0,0,0.2)',
+	top: '20%'
+	
+},
+".cont-blue": {
+	backgroundColor: 'rgba(0,0,210,0.2)',
+	top: '45%'
+},
+".container": {
+	width: '80%',
+	height: '20%',
+	borderRadius: '15',
+	left: '10%'
+},
+".icon-btn":{
+	height: 60,
+	width: 60,
+	color: "#C41230",
+	borderRadius: 30,
+	borderWidth: 2,
+	borderColor: "#C41230",
+	backgroundColor: "#FFF",
+	textAlign: "center",
+	font:{
+		fontSize: 24
+	},
+	bottom: '10%'
+},
+".title": {
+	top: '10%'
+},
+"#btnStart": {
+	bottom: '10%'
+}

@@ -1,0 +1,97 @@
+/*
+
+This is your global styles file. Selectors and rules you define
+here will be applied throughout your app. However, these rules
+have the lowest priority of any style settings.
+
+For more information, see the "Style Priorities" section of
+http://docs.appcelerator.com/titanium/latest/#!/guide/Alloy_Styles_and_Themes
+
+For example, the following would apply to all labels, windows,
+and text fields (depending on platform) in your app unless you
+overrode the settings with other TSS, XML, or JS settings:
+
+'Label[platform=android]': {
+	color: '#000' // all platforms except Android default to black
+}
+
+'Window': {
+	backgroundColor: '#fff' // white background instead of default transparent
+}
+
+'TextField[platform=android]': {
+	height: Ti.UI.SIZE //
+}
+
+*/
+/**
+ * 	Reset - Standardize behavior across platforms and set better defaults
+ *  courtesy of Tony Lukasavage
+ *  https://gist.github.com/tonylukasavage/6009423
+ *  
+ */
+
+'Label[platform=android]': {
+   color: '#000' // all platforms except Android default to black 
+},
+
+'Window': {
+    backgroundColor: '#fff', // white background instead of default transparent
+    titleAttributes:  {
+        color: "#C41230"
+   }
+},
+
+'Window[platform=android]': {
+    modal: false, // make android windows all heavyweight
+    navBarHidden: true,
+    fullscreen: true,
+},
+
+'TextField': {
+    borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED, // common default style
+    width: '130',
+    height: '25'
+},
+
+"ImageView":{
+	preventDefaultImage: true
+}
+/**************************************************************************
+ * General Helper and Utility Styles
+ *************************************************************************/
+".h1": {
+	font:{
+		fontSize: 36
+	}
+},
+".h2":{
+	font:{
+		fontSize: 30
+	}
+},
+".h3":{
+	font:{
+		fontSize: 24
+	}
+},
+".h4":{
+	font:{
+		fontSize: 18
+	}
+},
+".h5":{
+	font:{
+		fontSize: 14
+	}
+},
+".h6":{
+	font:{
+		fontSize: 12
+	}
+}
+".bold": {
+	font: {
+		fontWeight: 'bold'
+	}
+}
